@@ -256,10 +256,8 @@ class SimpleFontelicoProgressDialog {
 
   /// Method to hide the dialog
   void hide() {
-    if (_isOpen) {
-      Navigator.of(context!).pop();
-      _isOpen = false;
-    }
+    Navigator.of(context!).pop();
+    _isOpen = false;
   }
 
   /// Method to update the message text when dialog is open
